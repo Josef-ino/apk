@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moje APK — Ke stažení</title>
-  <meta name="description" content="Stáhněte si mé aplikace přímo do telefonu." />
+  <title>Ke stažení — APK PStore online</title>
+  <meta name="description" content="Stáhněte si moje aplikace." />
 
   <style>
     :root {
@@ -81,7 +81,6 @@
       outline:2px solid var(--accent);
       outline-offset:4px;
     }
-    /* První tlačítko zvýrazněné */
     .btn.primary {
       background:linear-gradient(135deg,var(--accent),var(--highlight));
       color:#fff;
@@ -108,19 +107,25 @@
 <body>
   <main class="card" role="main">
     <h1>Ke stažení</h1>
-    <p class="lead">Vyberte aplikaci ke stažení:</p>
+    <p class="lead">Vyberte jednu ze tří aplikací:</p>
 
     <div class="versions">
-      <!-- PRVNÍ APLIKACE -->
-      <a class="btn primary" href="PKalkulacka.apk" download>
-        <span>PKalkulačka</span>
-        <div class="tag">jednoduchá kalkulačka</div>
+      <!-- 1. APLIKACE - uprav href na skutečný název souboru -->
+      <a class="btn primary" href="POdpad.apk" download aria-label="Stáhnout aplikaci POdpad">
+        <span>Aplikace POdpad je určena ke kontrole svozu v obci Libice n. Cidlinou (plán přidat dalši obce)</span>
+        <div class="tag">beta/test - ne zcela funkční oznámení</div>
       </a>
 
-      <!-- DRUHÁ APLIKACE -->
-      <a class="btn" href="POdpad.apk" download>
-        <span>POdpad</span>
-        <div class="tag">upozornění při svozu odpadu v Libici n. Cidlinou (beta)</div>
+      <!-- 2. APLIKACE -->
+      <a class="btn" href="PKalkulacka_v2.apk" download aria-label="Stáhnout aplikaci PKalkulacka v2">
+        <span>Aplikace PKalkulacka v2 je vylepšená verze předchozí kalkulačky. Lepši design.</span>
+        <div class="tag">beta - při náklonu se zakryjí čísla</div>
+      </a>
+
+      <!-- 3. APLIKACE -->
+      <a class="btn" href="PKalkulacka.apk" download aria-label="Stáhnout aplikaci PKalkulacka">
+        <span>Aplikace PKalkulacka je nepovedená kalkulačka.</span>
+        <div class="tag">beta</div>
       </a>
     </div>
   </main>
